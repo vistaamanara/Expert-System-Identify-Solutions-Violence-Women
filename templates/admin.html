@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- file css -->
+    <link rel="stylesheet" href="/static/css/style.css">
+
+    <title>Admin</title>
+</head>
+<body class="admin-set">
+    <div class="sidebar">
+        <h2 class="logo"><a href="/views/admin">Expert<span> System</a></span></h2>
+        <a class="nav-admin" href="/views/admin" style="font-weight: bold; margin-top: 32px;"><i class='bx bxs-dashboard'></i> Dashboard</a>
+        <a class="nav-admin" href="/views/basis"><i class='bx bx-book-content'></i> Pengetahuan</a>
+        <a class="nav-admin" href="/views/aturan"><i class='bx bx-brain'></i> Aturan Logika</a>
+        <a class="nav-admin" href="/views/logout"><i class='bx bx-log-out'></i> Logout</a>
+    </div>
+    <div class="content">
+        <h2>Dasboard</h2>
+        <div class="content2">
+            <div class="satu">
+                <div style="padding-right: 24px;">
+                    <i class='bx bxl-dropbox'></i>
+                </div>
+                <div>
+                    <p style="font-size: 24px;font-weight: bold;">{{ total_users }}</p>
+                    <h4>Pengguna</h4>
+                </div>
+            </div>
+            <div class="dua">
+                <div style="padding-right: 24px;">
+                    <i class='bx bx-search'></i>
+                </div>
+                <div>
+                    <p style="font-size: 24px;font-weight: bold;">{{ total_pengetahuan }}</p>
+                    <h4>Pengetahuan</h4>
+                </div>
+            </div>
+            <div class="tiga">
+                <div style="padding-right: 24px;">
+                    <i class='bx bxs-plus-square'></i>
+                </div>
+                <div>
+                    <p style="font-size: 24px;font-weight: bold;">{{ total_aturan }}</p>
+                    <h4>Aturan</h4>
+                </div>
+            </div>
+            <div class="empat">
+                <div style="padding-right: 24px;">
+                    <i class='bx bx-list-ul'></i>
+                </div>
+                <div>
+                    <p style="font-size: 24px;font-weight: bold;">{{ total_kasus }}</p>
+                    <h4>Kasus</h4>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h4 style="padding-top: 72px;">Data Kasus di Website Sistem Pakar</h4>
+            <table class="table" style="border: none; margin-top: 16px;">
+                <thead>
+                    <tr>
+                        <th scope="col">Nama</th>
+                        <th scope="col">Usia</th>
+                        <th scope="col">Tingkat Pendidikan</th>
+                        <th scope="col">Asal Provinsi</th>
+                        <th scope="col">Hasil Inferensi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for item in data %}
+                    <tr>
+                        <td>{{ item.nama }}</td>
+                        <td>{{ item.usia }}</td>
+                        <td>{{ item.tingkat_pendidikan }}</td>
+                        <td>{{ item.asal_provinsi }}</td>
+                        <td>{{ item.hasil_inferensi }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</body>
+</html>

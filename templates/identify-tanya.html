@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- file css -->
+    <link rel="stylesheet" href="/static/css/style.css">
+
+    <title>Questions</title>
+</head>
+<body>
+    
+    <div class="ctrl-navigasi">
+        <nav>
+          <h2 class="logo"><a href="/views/"><b>Expert<br/><span> System</span></b></a></h2>
+          <div style="padding-top: 24px;">
+              <h4 style="text-align: right;">Hey, Halo! <i class="fa-regular fa-face-smile-wink" style="color: #0d6efd;"></i></h4>
+              <p style="text-align: right;" class="parag">Jawab pertanyaan-pertanyaan ini dan temukan solusi yang tepat</p>
+          </div>
+        </nav>
+        <div class="picttanya">
+          <div class="container-kanan-tanya">
+            <hr>
+            <form id="form-pertanyaan" action="{{ url_for('views.save_tanya') }}" method="POST">
+                <div>
+                    <label style="padding-bottom: 8px;">1. Apa hubungan Anda dengan pelaku kekerasan?</label>
+                    <select class="form-select" aria-label="Default select example" name="jawaban1" required>
+                      <option value="">Pilih Jawaban</option>
+                      <option value="0">Pasangan</option>
+                      <option value="1">anggota keluarga</option>
+                      <option value="2">lainnya</option>
+                    </select>
+                  </div>
+                  <div style="padding-top: 24px;">
+                    <label style="padding-bottom: 8px;">2. Di mana kekerasan tersebut terjadi?</label>
+                    <select class="form-select" aria-label="Default select example" name="jawaban2" required>
+                      <option value="">Pilih Jawaban</option>
+                      <option value="0">rumah</option>
+                      <option value="1">tempat umum</option>
+                      <option value="2">tempat kerja</option>
+                      <option value="3">lainnya</option>
+                    </select>
+                  </div>
+                  <div style="padding-top: 24px;">
+                    <label style="padding-bottom: 8px;">3. Apakah Anda pernah mengalami kekerasan fisik dari anggota keluarga atau pasangan Anda?</label>
+                    <select class="form-select" aria-label="Default select example" name="jawaban3" required>
+                      <option value="">Pilih Jawaban</option>
+                      <option value="1">Ya</option>
+                      <option value="0">Tidak</option>
+                    </select>
+                  </div>
+                  <div style="padding-top: 24px;">
+                    <label style="padding-bottom: 8px;">4. Apakah Anda pernah mengalami ancaman atau intimidasi yang membuat Anda merasa takut atau tidak aman di rumah?</label>
+                    <select class="form-select" aria-label="Default select example" name="jawaban4" required>
+                      <option value="">Pilih Jawaban</option>
+                      <option value="1">Ya</option>
+                      <option value="0">Tidak</option>
+                    </select>
+                  </div>
+                  <div style="padding-top: 24px;">
+                    <label style="padding-bottom: 8px;">5. Apakah Anda pernah mengalami penolakan atau penyalahgunaan emosional dari anggota keluarga atau pasangan Anda?</label>
+                    <select class="form-select" aria-label="Default select example" name="jawaban5" required>
+                      <option value="">Pilih Jawaban</option>
+                      <option value="1">Ya</option>
+                      <option value="0">Tidak</option>
+                    </select>
+                  </div>
+                  <div style="padding-top: 24px;">
+                    <label style="padding-bottom: 8px;">6. Apakah Anda pernah mengalami pemaksaan atau tekanan untuk melakukan aktivitas seksual yang tidak diinginkan?</label>
+                    <select class="form-select" aria-label="Default select example" name="jawaban6" required>
+                      <option value="">Pilih Jawaban</option>
+                      <option value="1">Ya</option>
+                      <option value="0">Tidak</option>
+                    </select>
+                  </div>
+                  <div style="padding-top: 24px;">
+                    <label style="padding-bottom: 8px;">7. Apakah Anda pernah mengalami pelecehan seksual fisik seperti sentuhan tidak diinginkan atau perkosaan?</label>
+                    <select class="form-select" aria-label="Default select example" name="jawaban7" required>
+                      <option value="">Pilih Jawaban</option>
+                      <option value="1">Ya</option>
+                      <option value="0">Tidak</option>
+                    </select>
+                  </div>
+                  <div style="padding-top: 24px;">
+                    <label style="padding-bottom: 8px;">8. Apakah Anda pernah mengalami pukulan, tendangan, atau perlakuan kasar secara fisik?</label>
+                    <select class="form-select" aria-label="Default select example" name="jawaban8" required>
+                      <option value="">Pilih Jawaban</option>
+                      <option value="1">Ya</option>
+                      <option value="0">Tidak</option>
+                    </select>
+                  </div>
+                  <div style="padding-top: 24px;">
+                    <label style="padding-bottom: 8px;">9. Apakah Anda pernah mengalami cedera atau memerlukan perawatan medis akibat kekerasan fisik?</label>
+                    <select class="form-select" aria-label="Default select example" name="jawaban9" required>
+                      <option value="">Pilih Jawaban</option>
+                      <option value="1">Ya</option>
+                      <option value="0">Tidak</option>
+                    </select>
+                  </div>
+                  <div style="padding-top: 24px;">
+                    <label style="padding-bottom: 8px;">10. Apakah Anda pernah mengalami penghinaan, ejekan, atau pengabaian yang merendahkan harga diri Anda?</label>
+                    <select class="form-select" aria-label="Default select example" name="jawaban10" required>
+                      <option value="">Pilih Jawaban</option>
+                      <option value="1">Ya</option>
+                      <option value="0">Tidak</option>
+                    </select>
+                  </div>
+                  <div style="padding-top: 24px;">
+                    <label style="padding-bottom: 8px;">11. Apakah Anda pernah dilarang untuk berkomunikasi dengan orang lain atau diisolasi dari teman dan keluarga?</label>
+                    <select class="form-select" aria-label="Default select example" name="jawaban11" required>
+                      <option value="">Pilih Jawaban</option>
+                      <option value="1">Ya</option>
+                      <option value="0">Tidak</option>
+                    </select>
+                  </div>
+                  <div style="padding-top: 24px;">
+                    <label style="padding-bottom: 8px;">12. Apakah Anda pernah mengalami pengendalian atau penyalahgunaan terhadap sumber daya ekonomi Anda seperti pendapatan atau kepemilikan aset?</label>
+                    <select class="form-select" aria-label="Default select example" name="jawaban12" required>
+                      <option value="">Pilih Jawaban</option>
+                      <option value="1">Ya</option>
+                      <option value="0">Tidak</option>
+                    </select>
+                  </div>
+                  <div style="padding-top: 24px;">
+                    <label style="padding-bottom: 8px;">13. Apakah Anda pernah dipaksa atau terbatas untuk mengakses uang atau sumber daya ekonomi yang diperlukan untuk kehidupan sehari-hari?</label>
+                    <select class="form-select" aria-label="Default select example" name="jawaban13" required>
+                      <option value="">Pilih Jawaban</option>
+                      <option value="1">Ya</option>
+                      <option value="0">Tidak</option>
+                    </select>
+                  </div>
+                  <button type="submit" class="btn btn-primary" style="margin-top: 24px; margin-bottom: 24px;">Selanjutnya</button>
+            </form>
+          </div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- file css -->
+    <link rel="stylesheet" href="/static/css/style.css">
+
+    <title>Result</title>
+</head>
+<body>
+    <div class="ctrl-navigasi">
+        <nav>
+            <h2 class="logo"><a href="/views/"><b>Expert<br/><span> System</span></b></a></h2>
+            <ul class="navigasi">
+                <li class="home"><a href="/views/">Home</a></li>
+                <li><a href="/views/about">About</a></li>
+                <li><a href="/views/visual">Article</a></li>
+                <li><a href="/views/identify" style="font-weight: bold;">Identify Solutions</a></li>
+                <li><a href="/views/logout" class="logout">Logout</a></li>
+            </ul>
+        </nav>
+        <div class="ctrl-picthasil">
+            <div class="picthasil">
+                <div class="container-kanan-hasil">
+                    <h4 style="font-weight: bold; padding-bottom: 16px;">Hey, ini hasilnya! <i class="fa-regular fa-face-smile-wink" style="color: #0d6efd;"></i></h4>
+                    <div>
+                        {%if hasil_inferensi == "Ada indikasi adanya ancaman dan intimidasi"%}
+                        <table>
+                            <tr>
+                                <td style="white-space: nowrap;">Hasil Inferensi</td>
+                                <td>:</td>
+                                <td>{{ hasil_inferensi }}</td>
+                            </tr>
+                            <tr>
+                                <td>Solusi</td>
+                                <td>:</td>
+                                <td style="text-align: justify; line-height: 1.5;">
+                                    Jika kamu sebagai korban yang menghadapi ancaman dan intimidasi, berikut adalah beberapa langkah yang dapat membantu kamu dalam situasi tersebut:<br/>
+                                    <ol>
+                                        <li><b>Prioritaskan keselamatan pribadi:</b> Keamanan pribadi adalah prioritas utama. Jika kamu merasa dalam bahaya, segera cari tempat yang aman. Jika perlu, hubungi pihak keamanan atau polisi setempat untuk bantuan segera.</li>
+                                        <li><b>Dapatkan bantuan dan perlindungan:</b> Hubungi organisasi atau lembaga yang berfokus pada perlindungan korban dengan pengalaman serupa. Mereka dapat memberikan bantuan, nasihat, dan tempat perlindungan yang aman. Organisasi ini biasanya memiliki program perlindungan korban dan dapat membantu dalam mengatasi ancaman dan intimidasi yang kamu hadapi.</li>
+                                        <li><b>Laporkan ancaman dan intimidasi kepada pihak berwenang:</b> Jika kamu merasa aman dan siap, laporkan ancaman dan intimidasi yang kamu alami kepada pihak berwenang, seperti polisi atau unit penegak hukum setempat. Berikan bukti atau informasi yang relevan yang dapat membantu dalam penyelidikan dan pencegahan lebih lanjut.</li>
+                                        <li><b>Buat catatan dan dokumentasikan setiap kejadian:</b> Penting untuk mencatat dan mendokumentasikan setiap kejadian ancaman dan intimidasi yang kamu alami. Catat tanggal, waktu, dan deskripsi kejadian dengan sejelas mungkin. Simpan bukti-bukti seperti pesan, surat, atau rekaman yang berkaitan dengan ancaman dan intimidasi tersebut.</li>
+                                        <li><b>Temui penasihat hukum atau lembaga bantuan hukum:</b> Konsultasikan dengan penasihat hukum atau lembaga bantuan hukum yang berpengalaman dalam kasus seperti ini. Mereka dapat memberikan nasihat hukum, membantu melindungi hak-hakmu, dan memandu dalam proses hukum yang mungkin terjadi terkait kasus ini.</li>
+                                        <li><b>Buat jaringan dukungan:</b> Cari dukungan dari orang-orang terdekat yang bisa dipercaya, seperti keluarga, teman, atau kelompok dukungan untuk korban dengan pengalaman serupa. Bergabung dengan kelompok dukungan atau forum online juga dapat memberikan kesempatan untuk berbagi pengalaman dan mendapatkan dukungan dari orang-orang yang memahami.</li>
+                                        <li><b>Tingkatkan keamanan pribadi:</b> Pertimbangkan untuk meningkatkan keamanan pribadimu. Buat rencana keamanan yang mencakup langkah-langkah seperti mengubah rutinitas, mengamankan rumah atau tempat tinggal, menggunakan fitur keamanan di media sosial, dan memperkuat sistem keamanan pribadi. Konsultasikan dengan ahli keamanan atau lembaga yang berfokus pada keamanan korban untuk mendapatkan saran yang tepat.</li>
+                                        <li><b>Jaga kesehatan fisik dan mental:</b> Perhatikan kesehatan fisik dan mentalmu dengan baik. Usahakan untuk tidur cukup, makan makanan sehat, dan lakukan olahraga secara teratur. Temui konselor atau terapis yang berpengalaman dalam mendampingi korban dengan kondisi serupa untuk membantu mengatasi stres dan memperkuat kesejahteraan mentalmu.</li>
+                                        <li><b>Pelajari hak-hakmu:</b> Edukasikan dirimu tentang hak-hakmu sebagai korban dan sumber daya yang tersedia untuk melindungi dan mendukungmu. Ketahui hukum dan peraturan terkait yang dapat memberikan perlindungan bagi korban ancaman dan intimidasi.</li>
+                                        <li><b>Jangan ragu untuk meminta bantuan:</b> Jika kamu membutuhkan bantuan, jangan ragu untuk mencari dukungan dari lembaga atau organisasi yang menyediakan layanan untuk korban dengan kondisi serupa. Mereka dapat memberikan bantuan, nasihat, dan arahan yang kamu butuhkan dalam menghadapi ancaman dan intimidasi ini.</li>
+                                    </ol>
+                                    Ingatlah bahwa setiap situasi ancaman dan intimidasi unik, dan solusi yang tepat akan bervariasi tergantung pada keadaan individu. Jangan ragu untuk mencari bantuan dari sumber-sumber yang kompeten dan berkualitas tinggi. Kamu tidak sendirian, dan ada banyak orang dan organisasi yang siap membantu dan mendukungmu dalam menghadapi ancaman dan intimidasi ini.
+                                </td>
+                            </tr>
+                        </table>
+                        {%elif hasil_inferensi == "Ada indikasi adanya kekerasan fisik"%}
+                        <table>
+                            <tr>
+                                <td style="white-space: nowrap;">Hasil Inferensi</td>
+                                <td>:</td>
+                                <td>{{ hasil_inferensi }}</td>
+                            </tr>
+                            <tr>
+                                <td>Solusi</td>
+                                <td>:</td>
+                                <td style="text-align: justify; line-height: 1.5;">
+                                    Jika kamu sebagai korban menghadapi indikasi kekerasan fisik, berikut adalah beberapa langkah yang dapat membantu kamu dalam situasi tersebut:<br/>
+                                    <ol>
+                                        <li><b>Keamanan pribadi adalah prioritas utama:</b> Jika kamu masih dalam bahaya atau situasi darurat, segera cari tempat yang aman. Tinggalkan situasi tersebut dan cari perlindungan secepat mungkin. Jika perlu, hubungi pihak keamanan atau polisi setempat untuk bantuan segera.</li>
+                                        <li><b>Dapatkan bantuan medis:</b> Setelah mengalami kekerasan fisik, penting untuk mencari perawatan medis segera. Segera kunjungi rumah sakit atau klinik terdekat untuk mendapatkan perawatan medis yang kamu butuhkan. Dokter atau petugas medis dapat melakukan pemeriksaan, merawat cedera, dan memberikan nasihat medis yang tepat.</li>
+                                        <li><b>Laporkan kekerasan kepada pihak berwenang:</b> Jika kamu merasa aman dan siap, laporkan kekerasan fisik yang kamu alami kepada pihak berwenang, seperti polisi atau unit penegak hukum setempat. Sampaikan informasi secara jujur dan mendetail tentang kejadian yang kamu alami. Laporan ini dapat membantu dalam proses penyelidikan, penuntutan pelaku, dan mencegah kekerasan terjadi pada orang lain.</li>
+                                        <li><b>Temui konselor atau terapis yang berpengalaman:</b> Kekerasan fisik dapat meninggalkan dampak psikologis yang serius. Temui konselor atau terapis yang berpengalaman dalam mendampingi korban kekerasan fisik. Terapi psikologis dan konseling dapat membantu dalam mengatasi trauma, mengelola emosi yang sulit, dan memulihkan kesejahteraan mentalmu.</li>
+                                        <li><b>Cari perlindungan dan dukungan:</b> Hubungi organisasi atau lembaga yang berfokus pada perlindungan korban kekerasan fisik. Mereka dapat memberikan bantuan, nasihat, dan tempat perlindungan yang aman untukmu. Organisasi seperti pusat krisis atau rumah perlindungan dapat memberikan dukungan emosional, keamanan, dan sumber daya yang kamu butuhkan dalam pemulihanmu.</li>
+                                        <li><b>Buat rencana keamanan:</b> Bekerja sama dengan lembaga atau organisasi yang berfokus pada perlindungan korban kekerasan fisik untuk membuat rencana keamanan pribadi yang mencakup langkah-langkah untuk melindungi diri sendiri dari ancaman dan kekerasan lebih lanjut. Rekanan ini dapat membantu mengidentifikasi area yang aman, memberikan saran keamanan, dan memberi kamu sumber daya dalam situasi darurat.</li>
+                                        <li><b>Jaga dirimu sendiri dengan baik:</b> Perhatikan kesehatan fisik dan mentalmu dengan baik. Usahakan untuk tidur cukup, makan makanan sehat, dan lakukan olahraga secara teratur. Hindari penggunaan zat yang merugikan kesehatanmu dan praktikkan teknik pengelolaan stres seperti meditasi atau relaksasi.</li>
+                                        <li><b>Cari dukungan sosial:</b> Cari dukungan dari orang-orang terdekat yang bisa dipercaya, seperti keluarga, teman, atau kelompok dukungan untuk korban kekerasan fisik. Bergabung dengan kelompok dukungan atau forum online yang diperuntukkan bagi korban kekerasan fisik juga dapat memberikan kesempatan untuk berbagi pengalaman dan mendapatkan dukungan dari orang-orang yang memahami.</li>
+                                        <li><b>Konsultasikan dengan penasihat hukum:</b> Jika kamu membutuhkan nasihat hukum terkait kekerasan fisik yang kamu alami, konsultasikan dengan pengacara atau penasihat hukum yang berpengalaman dalam kasus tersebut. Mereka dapat memberikan nasihat hukum yang sesuai dengan situasi kamu dan membantu melindungi hak-hakmu.</li>
+                                        <li><b>Jangan ragu untuk meminta bantuan:</b> Jika kamu membutuhkan bantuan dalam menghadapi kekerasan fisik, jangan ragu untuk mencari bantuan dari lembaga atau organisasi yang menyediakan layanan untuk korban kekerasan. Mereka dapat memberikan bantuan, nasihat, dan arahan yang kamu butuhkan dalam pemulihanmu.</li>
+                                    </ol>
+                                    Ingatlah bahwa setiap situasi kekerasan fisik unik, dan solusi yang tepat akan bervariasi tergantung pada keadaan individu. Jangan ragu untuk mencari bantuan dari sumber-sumber yang kompeten dan berkualitas tinggi. Kamu tidak sendirian, dan ada banyak orang dan organisasi yang siap membantu dan mendukungmu dalam menghadapi kekerasan fisik ini.
+                                </td>
+                            </tr>
+                        </table>
+                        {%elif hasil_inferensi == "Ada indikasi adanya tekanan seksual"%}
+                        <table>
+                            <tr>
+                                <td style="white-space: nowrap;">Hasil Inferensi</td>
+                                <td>:</td>
+                                <td>{{ hasil_inferensi }}</td>
+                            </tr>
+                            <tr>
+                                <td>Solusi</td>
+                                <td>:</td>
+                                <td style="text-align: justify; line-height: 1.5;">
+                                    Jika kamu mengalami indikasi tekanan seksual, berikut adalah beberapa langkah yang dapat membantu dalam situasi tersebut:<br/>
+                                    <ol>
+                                        <li><b>Prioritaskan keselamatan pribadi:</b> Keamanan pribadi adalah prioritas utama. Jika kamu masih dalam bahaya atau situasi darurat, segera cari tempat yang aman. Jika perlu, hubungi pihak keamanan, polisi, atau lembaga perlindungan setempat untuk bantuan segera.</li>
+                                        <li><b>Temui seseorang yang dapat dipercaya:</b> Cari seseorang yang dapat dipercaya untuk berbicara mengenai indikasi tekanan seksual yang kamu alami. Ini bisa menjadi teman, anggota keluarga, guru, atau seorang konselor yang dapat memberikan dukungan emosional dan nasihat.</li>
+                                        <li><b>Dapatkan bantuan profesional:</b> Cari bantuan dari organisasi atau lembaga yang berfokus pada pendampingan korban tekanan seksual. Mereka dapat memberikan dukungan emosional, bantuan hukum, dan perawatan medis yang kamu butuhkan. Pusat krisis atau rumah perlindungan adalah beberapa contoh organisasi yang dapat membantu.</li>
+                                        <li><b>Laporkan kejadian kepada pihak berwenang:</b> Jika kamu merasa aman dan siap, laporkan indikasi tekanan seksual yang kamu alami kepada pihak berwenang, seperti polisi atau unit penegak hukum setempat. Sampaikan informasi dengan jujur dan mendetail tentang kejadian yang kamu alami. Laporan ini dapat membantu dalam proses penyelidikan dan penuntutan pelaku serta mencegah kejadian serupa terjadi pada orang lain.</li>
+                                        <li><b>Temui konselor atau terapis yang berpengalaman:</b> Konseling dan terapi psikologis dapat membantu dalam mengatasi trauma akibat tekanan seksual. Temui konselor atau terapis yang berpengalaman dalam mendampingi korban tekanan seksual. Mereka dapat membantu mengelola emosi yang sulit, memperkuat kesejahteraan mental, dan membangun kembali kepercayaan diri.</li>
+                                        <li><b>Buat catatan dan dokumentasikan setiap kejadian:</b> Penting untuk mencatat dan mendokumentasikan setiap kejadian tekanan seksual yang kamu alami. Catat tanggal, waktu, dan deskripsi kejadian secara rinci. Simpan bukti seperti pesan, surat, atau rekaman yang berkaitan dengan tekanan seksual tersebut.</li>
+                                        <li><b>Tingkatkan kesadaran tentang hak-hakmu:</b> Pelajari hak-hakmu sebagai korban tekanan seksual. Ketahui undang-undang dan peraturan terkait yang memberikan perlindungan kepada korban. Pahami bahwa kamu tidak bersalah dan memiliki hak untuk mendapatkan perlindungan dan keadilan.</li>
+                                        <li><b>Jaga kesehatan fisik dan mental:</b> Perhatikan kesehatan fisik dan mentalmu dengan baik. Usahakan untuk tidur cukup, makan makanan sehat, dan lakukan olahraga secara teratur. Temui dokter atau tenaga medis untuk pemeriksaan dan perawatan medis yang mungkin diperlukan.</li>
+                                        <li><b>Cari dukungan sosial:</b> Cari dukungan dari orang-orang terdekat yang dapat dipercaya, seperti keluarga, teman, atau kelompok dukungan untuk korban tekanan seksual. Bergabung dengan kelompok dukungan atau forum online yang diperuntukkan bagi korban tekanan seksual juga dapat memberikan kesempatan untuk berbagi pengalaman dan mendapatkan dukungan dari orang-orang yang memahami.</li>
+                                        <li><b>Ingat bahwa kamu tidak sendirian:</b> Ingatlah bahwa kamu tidak sendirian dalam menghadapi situasi ini. Ada banyak orang dan organisasi yang siap membantu dan mendukungmu. Jangan ragu untuk mencari bantuan dan berbagi pengalamanmu dengan orang-orang terpercaya.</li>
+                                    </ol>
+                                    Ingatlah bahwa setiap situasi tekanan seksual unik, dan solusi yang tepat akan bervariasi tergantung pada keadaan individu. Jangan ragu untuk mencari bantuan dari sumber-sumber yang kompeten dan berkualitas tinggi. Kamu memiliki hak untuk mendapatkan perlindungan, dukungan, dan keadilan.
+                                </td>
+                            </tr>
+                        </table>
+                        {%elif hasil_inferensi == "Ada indikasi adanya penyalahgunaan ekonomi"%}
+                        <table>
+                            <tr>
+                                <td style="white-space: nowrap;">Hasil Inferensi</td>
+                                <td>:</td>
+                                <td>{{ hasil_inferensi }}</td>
+                            </tr>
+                            <tr>
+                                <td>Solusi</td>
+                                <td>:</td>
+                                <td style="text-align: justify; line-height: 1.5;">
+                                    Jika kamu menghadapi indikasi penyalahgunaan ekonomi, berikut adalah beberapa langkah yang dapat membantu dalam situasi tersebut:<br/>
+                                    <ol>
+                                        <li><b>Dapatkan bantuan dari lembaga perlindungan:</b> Hubungi organisasi atau lembaga yang berfokus pada perlindungan korban penyalahgunaan ekonomi. Mereka dapat memberikan bantuan, nasihat, dan dukungan dalam menghadapi situasi ini. Pusat krisis, lembaga perlindungan korban kekerasan, atau lembaga yang mengkhususkan diri dalam penyalahgunaan ekonomi adalah beberapa contoh sumber bantuan yang dapat kamu hubungi.</li>
+                                        <li><b>Tinjau keuangan dan dokumentasikan:</b> Tinjau keuanganmu secara hati-hati. Lakukan audit keuangan pribadi dan identifikasi segala kejanggalan atau ketidaksesuaian. Dokumentasikan bukti-bukti yang mendukung indikasi penyalahgunaan ekonomi, seperti transaksi yang mencurigakan, perubahan dalam kepemilikan aset, atau ketidaksesuaian dalam catatan keuangan.</li>
+                                        <li><b>Konsultasikan dengan ahli hukum atau penasehat keuangan:</b> Cari nasihat dari ahli hukum atau penasehat keuangan yang berpengalaman dalam kasus penyalahgunaan ekonomi. Mereka dapat memberikan nasihat hukum, membantu melindungi hak-hakmu, dan memandu dalam proses hukum yang mungkin terjadi terkait kasus ini. Ahli hukum atau penasehat keuangan juga dapat membantu dalam menyusun strategi pemulihan keuanganmu.</li>
+                                        <li><b>Laporkan kepada pihak berwenang:</b> Jika kamu merasa aman dan siap, laporkan indikasi penyalahgunaan ekonomi yang kamu alami kepada pihak berwenang, seperti polisi atau unit penegak hukum setempat. Sampaikan informasi dengan jujur dan lengkap tentang kejadian yang kamu alami serta sertakan bukti yang kamu kumpulkan. Laporan ini dapat membantu dalam proses penyelidikan dan penuntutan pelaku serta mencegah penyalahgunaan ekonomi pada orang lain.</li>
+                                        <li><b>Lindungi identitas dan informasi pribadi:</b> Selama menghadapi situasi penyalahgunaan ekonomi, penting untuk melindungi identitas dan informasi pribadimu. Pertimbangkan untuk mengubah kata sandi dan mengamankan akun-akun onlinemu. Hindari memberikan informasi pribadi yang sensitif kepada pihak yang tidak terpercaya.</li>
+                                        <li><b>Cari dukungan emosional dan psikologis:</b> Penyalahgunaan ekonomi dapat memiliki dampak emosional yang serius. Temui konselor atau terapis yang berpengalaman dalam mendampingi korban penyalahgunaan ekonomi. Terapi psikologis dan konseling dapat membantu mengatasi trauma, memperkuat kesejahteraan mental, dan membantu dalam pemulihanmu.</li>
+                                        <li><b>Tingkatkan keterampilan keuangan:</b> Tingkatkan pengetahuan dan keterampilan keuanganmu. Pelajari cara mengelola keuangan secara efektif, membuat anggaran, dan berinvestasi dengan bijaksana. Mengembangkan pemahaman yang kuat tentang keuangan dapat membantu dalam pemulihanmu dan mencegah penyalahgunaan ekonomi di masa depan.</li>
+                                        <li><b>Cari dukungan sosial:</b> Cari dukungan dari orang-orang terdekat yang dapat dipercaya, seperti keluarga, teman, atau kelompok dukungan untuk korban penyalahgunaan ekonomi. Bergabung dengan kelompok dukungan atau forum online yang diperuntukkan bagi korban penyalahgunaan ekonomi juga dapat memberikan kesempatan untuk berbagi pengalaman dan mendapatkan dukungan dari orang-orang yang memahami.</li>
+                                        <li><b>Pelajari hak-hakmu:</b> Edukasikan dirimu tentang hak-hakmu sebagai korban penyalahgunaan ekonomi. Pelajari undang-undang dan peraturan terkait yang memberikan perlindungan bagi korban. Pahami bahwa kamu tidak bersalah dan memiliki hak untuk mendapatkan perlindungan dan keadilan.</li>
+                                        <li><b>Jangan ragu untuk meminta bantuan:</b> Jika kamu membutuhkan bantuan dalam menghadapi penyalahgunaan ekonomi, jangan ragu untuk mencari bantuan dari lembaga atau organisasi yang menyediakan layanan untuk korban penyalahgunaan ekonomi. Mereka dapat memberikan bantuan, nasihat, dan arahan yang kamu butuhkan dalam pemulihanmu.</li>
+                                    </ol>
+                                    Ingatlah bahwa setiap situasi penyalahgunaan ekonomi unik, dan solusi yang tepat akan bervariasi tergantung pada keadaan individu. Jangan ragu untuk mencari bantuan dari sumber-sumber yang kompeten dan berkualitas tinggi. Kamu tidak sendirian, dan ada banyak orang dan organisasi yang siap membantu dan mendukungmu dalam menghadapi penyalahgunaan ekonomi ini.
+                                </td>
+                            </tr>
+                        </table>
+                        {%elif hasil_inferensi == "Kemungkinan kekerasan dalam hubungan di rumah"%}
+                        <table>
+                            <tr>
+                                <td style="white-space: nowrap;">Hasil Inferensi</td>
+                                <td>:</td>
+                                <td>{{ hasil_inferensi }}</td>
+                            </tr>
+                            <tr>
+                                <td>Solusi</td>
+                                <td>:</td>
+                                <td style="text-align: justify; line-height: 1.5;">
+                                    Saya sedih mendengar bahwa ada seseorang yang mengalami kemungkinan kekerasan di dalam rumah. Situasi semacam ini sangat serius dan membutuhkan perhatian yang tepat. Berikut ini adalah beberapa langkah yang dapat diambil untuk membantu korban kekerasan dalam rumah:<br/>
+                                    <ol>
+                                        <li><b>Prioritaskan keselamatan:</b> Keselamatan korban harus menjadi prioritas utama. Jika korban berada dalam bahaya segera, hubungi pihak berwenang setempat, seperti polisi, dan minta bantuan secepat mungkin.</li>
+                                        <li><b>Dukungan emosional:</b> Tunjukkan dukungan emosional kepada korban dan beri tahu mereka bahwa Anda peduli dengan situasinya. Dengarkan mereka dengan penuh perhatian dan jangan menyalahkan mereka atas apa yang terjadi. Berikan dorongan dan yakinkan mereka bahwa kekerasan bukanlah kesalahan mereka.</li>
+                                        <li><b>Sediakan informasi:</b> Berikan korban informasi tentang sumber daya dan layanan yang tersedia bagi mereka. Banyak negara memiliki hotline darurat untuk korban kekerasan dalam rumah yang dapat dihubungi untuk mendapatkan bantuan dan nasihat. Pastikan mereka mengetahui nomor kontak dan alamat tempat perlindungan jika mereka perlu meninggalkan rumah secara mendadak.</li>
+                                        <li><b>Jaringan dukungan:</b> Bantu korban untuk menghubungi keluarga, teman, atau anggota masyarakat yang dapat memberikan dukungan tambahan. Terkadang, korban kekerasan merasa terisolasi dan memiliki rasa malu untuk berbicara tentang situasinya. Membantu mereka membangun jaringan dukungan yang kuat dapat memberikan kekuatan dan bantuan yang mereka butuhkan.</li>
+                                        <li><b>Dukungan hukum:</b> Dorong korban untuk mendapatkan nasihat hukum dari pengacara atau organisasi yang berfokus pada hak-hak korban kekerasan dalam rumah. Mereka dapat memberikan informasi tentang hak-hak korban dan membantu dalam proses hukum jika diperlukan, seperti mendapatkan perintah perlindungan.</li>
+                                        <li><b>Tingkatkan kesadaran</b> tentang kekerasan dalam rumah dan dampaknya dalam masyarakat. Melalui edukasi dan kampanye kesadaran, kita dapat mempengaruhi perubahan sosial yang lebih besar dan memperkuat perlindungan terhadap korban.</li>
+                                    </ol>
+                                    Penting untuk diingat bahwa saran yang diberikan hanya bersifat umum. Setiap situasi kekerasan dalam rumah memiliki dinamika yang unik, jadi sangat penting bagi korban untuk mendapatkan bantuan profesional dari pihak berwenang atau organisasi yang berkompeten dalam bidang ini.
+                                </td>
+                            </tr>
+                        </table>
+                        {%elif hasil_inferensi == "Ada indikasi adanya penolakan atau penyalahgunaan emosional"%}
+                        <table>
+                            <tr>
+                                <td style="white-space: nowrap;">Hasil Inferensi</td>
+                                <td>:</td>
+                                <td>{{ hasil_inferensi }}</td>
+                            </tr>
+                            <tr>
+                                <td>Solusi</td>
+                                <td>:</td>
+                                <td style="text-align: justify; line-height: 1.5;">
+                                    Saya mohon maaf mendengar bahwa ada seseorang yang mengalami indikasi penolakan atau penyalahgunaan emosional. Ini adalah situasi yang serius dan dapat berdampak buruk pada kesejahteraan korban. Berikut ini adalah beberapa langkah yang dapat diambil untuk membantu korban dalam situasi ini:<br/>
+                                    <ol>
+                                        <li><b>Validasi dan dukungan emosional:</b> Tunjukkan kepada korban bahwa Anda mendukung mereka dan bahwa perasaan mereka valid. Dengarkan mereka dengan empati, tanpa mengabaikan atau meremehkan pengalaman mereka. Dorong mereka untuk berbicara terbuka tentang apa yang mereka rasakan dan berikan dukungan emosional yang diperlukan.</li>
+                                        <li><b>Edukasi tentang penolakan dan penyalahgunaan emosional:</b> Bantu korban memahami bahwa apa yang mereka alami adalah bentuk penolakan atau penyalahgunaan emosional. Berikan informasi tentang tanda-tanda dan pola perilaku yang sering terkait dengan penolakan atau penyalahgunaan emosional. Dengan pemahaman yang lebih baik tentang situasi mereka, korban dapat memahami bahwa mereka tidak sendirian dan bahwa masalah ini bukanlah kesalahan mereka.</li>
+                                        <li><b>Mendorong korban untuk mencari dukungan profesional:</b> Sarankan kepada korban untuk mencari bantuan dari profesional seperti konselor, psikolog, atau terapis yang berpengalaman dalam bidang kekerasan dalam hubungan atau kesehatan mental. Profesional ini dapat membantu korban memahami dampak emosional yang mungkin mereka alami dan memberikan strategi untuk menghadapinya.</li>
+                                        <li><b>Memperkuat rasa harga diri dan batasan pribadi:</b> Bantu korban untuk memperkuat rasa harga diri mereka. Dorong mereka untuk mengidentifikasi dan memperkuat batasan pribadi yang sehat. Bekerja sama dengan korban untuk mengenali hak-hak mereka dalam hubungan dan mendorong mereka untuk mempertahankan batasan yang mereka tetapkan.</li>
+                                        <li><b>Dukungan jaringan sosial:</b> Bantu korban untuk menghubungi dan membangun jaringan sosial yang sehat. Sediakan dukungan yang konstan dan berperan sebagai sumber dukungan tambahan. Jika mungkin, dorong korban untuk terlibat dalam komunitas atau kelompok pendukung yang memahami pengalaman mereka.</li>
+                                        <li><b>Pertimbangkan keamanan fisik:</b> Jika ada indikasi bahwa situasi dapat menjadi fisik atau lebih berbahaya, dorong korban untuk menghubungi pihak berwenang dan mencari perlindungan secepat mungkin. Bantu mereka membuat rencana keamanan yang efektif untuk melindungi diri mereka sendiri.</li>
+                                    </ol>
+                                    Saya mendorong Anda untuk mendampingi korban dalam mencari bantuan dari organisasi atau individu yang berpengalaman dalam menangani kasus penolakan atau penyalahgunaan emosional.
+                                </td>
+                            </tr>
+                        </table>
+                        {%elif hasil_inferensi == "Ada indikasi adanya pelecehan seksual"%}
+                        <table>
+                            <tr>
+                                <td style="white-space: nowrap;">Hasil Inferensi</td>
+                                <td>:</td>
+                                <td>{{ hasil_inferensi }}</td>
+                            </tr>
+                            <tr>
+                                <td>Solusi</td>
+                                <td>:</td>
+                                <td style="text-align: justify; line-height: 1.5;">
+                                    Saya prihatin mendengar bahwa ada seseorang yang mengalami indikasi pelecehan seksual. Situasi semacam ini sangat serius dan membutuhkan tindakan yang tepat. Berikut ini adalah beberapa langkah yang dapat diambil untuk membantu korban dalam situasi ini:<br/>
+                                    <ol>
+                                        <li><b>Prioritaskan keselamatan korban:</b> Pastikan keselamatan korban menjadi prioritas utama. Jika korban berada dalam bahaya segera, hubungi pihak berwenang setempat, seperti polisi, dan minta bantuan secepat mungkin. Bantu korban untuk meninggalkan tempat kejadian jika diperlukan.</li>
+                                        <li><b>Dukungan emosional:</b> Tunjukkan dukungan emosional kepada korban dan beri tahu mereka bahwa Anda peduli dengan situasinya. Dengarkan mereka dengan penuh perhatian, tanpa menyalahkan atau meragukan pengalaman mereka. Jangan memaksa mereka untuk menceritakan apa yang terjadi jika mereka belum siap. Berikan ruang bagi korban untuk berbicara saat mereka merasa nyaman.</li>
+                                        <li><b>Percaya dan validasi:</b> Penting untuk mempercayai korban dan validasi pengalaman mereka. Pelecehan seksual sering kali melibatkan rasa malu, rasa bersalah, dan stigmatisasi. Dengan mempercayai dan mengvalidasi pengalaman mereka, Anda dapat membantu mengurangi beban emosional yang mereka rasakan.</li>
+                                        <li><b>Sarankan untuk mencari bantuan profesional:</b> Dorong korban untuk mencari bantuan dari profesional yang berpengalaman dalam menangani pelecehan seksual, seperti psikolog, konselor, atau terapis. Para profesional ini dapat memberikan dukungan emosional, membantu dalam pemulihan korban, dan memberikan panduan dalam menghadapi situasi tersebut.</li>
+                                        <li><b>Informasikan tentang sumber daya yang tersedia:</b> Sediakan informasi tentang sumber daya dan layanan yang tersedia bagi korban pelecehan seksual. Banyak negara memiliki organisasi yang fokus pada bantuan dan perlindungan bagi korban pelecehan seksual. Berikan nomor hotline darurat dan alamat tempat perlindungan jika korban membutuhkannya.</li>
+                                        <li><b>Jaga kerahasiaan:</b> Penting untuk menjaga kerahasiaan informasi yang diberikan oleh korban. Hargai keinginan mereka untuk membagikan cerita mereka hanya dengan orang-orang yang mereka percayai. Jangan membagikan informasi tanpa izin mereka.</li>
+                                        <li><b>Berikan pendampingan:</b> Bantu korban dalam proses hukum atau pemeriksaan medis jika mereka memilih untuk melaporkan pelecehan seksual. Sediakan dukungan dan pendampingan selama proses tersebut</li>
+                                    </ol>
+                                    Saya mendorong Anda untuk mendampingi korban dalam mencari bantuan dari organisasi yang berpengalaman dalam menangani pelecehan seksual.
+                                </td>
+                            </tr>
+                        </table>
+                        {%elif hasil_inferensi == "Ada indikasi adanya cedera fisik"%}
+                        <table>
+                            <tr>
+                                <td style="white-space: nowrap;">Hasil Inferensi</td>
+                                <td>:</td>
+                                <td>{{ hasil_inferensi }}</td>
+                            </tr>
+                            <tr>
+                                <td>Solusi</td>
+                                <td>:</td>
+                                <td style="text-align: justify; line-height: 1.5;">
+                                    Saya sangat prihatin mendengar bahwa ada seseorang yang mengalami indikasi cedera fisik. Situasi semacam ini memerlukan tindakan segera dan penanganan yang tepat. Berikut ini adalah beberapa langkah yang dapat diambil untuk membantu korban dalam situasi ini:<br/>
+                                    <ol>
+                                        <li><b>Prioritaskan keselamatan korban:</b> Jika korban berada dalam bahaya atau membutuhkan perawatan medis segera, panggil bantuan medis darurat atau hubungi pihak berwenang setempat seperti polisi. Pastikan korban berada dalam lingkungan yang aman dan hindari risiko lebih lanjut terhadap keamanan mereka.</li>
+                                        <li><b>Dukungan medis:</b> Sarankan korban untuk segera mencari perawatan medis untuk cedera fisik yang mereka alami. Bantu mereka dalam menghubungi layanan medis terdekat atau rumah sakit. Jika diperlukan, dampingi mereka selama perawatan medis untuk memberikan dukungan emosional dan memastikan kebutuhan mereka dipenuhi.</li>
+                                        <li><b>Dukungan emosional:</b> Berikan dukungan emosional kepada korban dalam proses pemulihan mereka. Dengarkan mereka dengan penuh perhatian, tunjukkan empati, dan hindari menyalahkan mereka atas apa yang terjadi. Ingatkan mereka bahwa mereka tidak sendirian dan bahwa ada dukungan yang tersedia untuk mereka.</li>
+                                        <li><b>Laporan dan langkah hukum:</b> Jika korban merasa nyaman melakukannya, dorong mereka untuk melaporkan kejadian ini kepada pihak berwenang. Bantu mereka dalam menyusun laporan polisi dan memperoleh informasi tentang proses hukum yang terkait. Jika diperlukan, sarankan agar mereka berkonsultasi dengan pengacara yang berpengalaman dalam kasus kekerasan atau cedera fisik.</li>
+                                        <li><b>Bantuan dari organisasi terkait:</b> Informasikan korban tentang organisasi dan lembaga yang dapat memberikan bantuan dan dukungan lebih lanjut. Banyak negara memiliki organisasi non-pemerintah yang fokus pada perlindungan dan pemulihan korban kekerasan fisik. Berikan informasi tentang nomor hotline darurat dan layanan konseling yang tersedia.</li>
+                                        <li><b>Dukungan jaringan sosial:</b> Bantu korban untuk membangun jaringan sosial yang sehat dan mendukung. Sarankan mereka untuk mencari dukungan dari keluarga, teman, atau anggota masyarakat yang bisa memberikan dukungan tambahan dalam proses pemulihan mereka.</li>
+                                    </ol>
+                                    Saya mendorong Anda untuk mendampingi korban dalam mencari bantuan dari organisasi yang berpengalaman dalam menangani kekerasan fisik atau cedera.
+                                </td>
+                            </tr>
+                        </table>
+                        {%elif hasil_inferensi == "Ada indikasi adanya perlakuan kasar"%}
+                        <table>
+                            <tr>
+                                <td style="white-space: nowrap;">Hasil Inferensi</td>
+                                <td>:</td>
+                                <td>{{ hasil_inferensi }}</td>
+                            </tr>
+                            <tr>
+                                <td>Solusi</td>
+                                <td>:</td>
+                                <td style="text-align: justify; line-height: 1.5;">
+                                    Saya prihatin mendengar bahwa ada seseorang yang mengalami indikasi perlakuan kasar. Situasi semacam ini sangat serius dan dapat berdampak negatif pada kesejahteraan korban. Berikut ini adalah beberapa langkah yang dapat diambil untuk membantu korban dalam situasi ini:<br/>
+                                    <ol>
+                                        <li><b>Pastikan keselamatan korban:</b> Prioritaskan keselamatan korban dan hindari risiko lebih lanjut terhadap keamanannya. Jika korban berada dalam bahaya, segera hubungi pihak berwenang setempat seperti polisi atau hotline darurat untuk mendapatkan bantuan secepat mungkin.</li>
+                                        <li><b>Dukungan emosional:</b> Tunjukkan dukungan emosional kepada korban dan beri tahu mereka bahwa Anda peduli dengan situasinya. Dengarkan mereka dengan penuh perhatian dan tanpa menyalahkan atau meragukan pengalaman mereka. Berikan dorongan dan nyatakan bahwa perlakuan kasar yang mereka alami tidaklah benar atau pantas.</li>
+                                        <li><b>Dorong untuk mencari bantuan profesional:</b> Sarankan kepada korban untuk mencari bantuan dari profesional seperti konselor, psikolog, atau terapis yang berpengalaman dalam bidang kekerasan atau perlakuan kasar. Para profesional ini dapat membantu korban memahami dampak emosional dan memberikan strategi untuk menghadapinya.</li>
+                                        <li><b>Sediakan informasi tentang sumber daya:</b> Berikan korban informasi tentang sumber daya dan layanan yang tersedia bagi mereka. Banyak negara memiliki organisasi yang fokus pada bantuan dan perlindungan bagi korban perlakuan kasar. Sediakan nomor hotline darurat dan alamat tempat perlindungan jika diperlukan.</li>
+                                        <li><b>Bantu dalam membangun jaringan dukungan:</b> Dorong korban untuk menghubungi keluarga, teman, atau anggota masyarakat yang dapat memberikan dukungan tambahan. Mereka dapat memberikan dukungan emosional dan praktis kepada korban selama proses pemulihan mereka.</li>
+                                        <li><b>Pendidikan dan kesadaran:</b> Tingkatkan kesadaran tentang perlakuan kasar dan dampaknya dalam masyarakat. Edukasi orang lain tentang perlunya menghormati hak-hak individu dan mendorong lingkungan yang bebas dari kekerasan dan perlakuan kasar.</li>
+                                    </ol>
+                                    Saya mendorong Anda untuk mendampingi korban dalam mencari bantuan dari organisasi atau individu yang berpengalaman dalam menangani kasus perlakuan kasar.
+                                </td>
+                            </tr>
+                        </table>
+                        {%elif hasil_inferensi == "Ada indikasi adanya penghinaan dan penurunan harga diri"%}
+                        <table>
+                            <tr>
+                                <td style="white-space: nowrap;">Hasil Inferensi</td>
+                                <td>:</td>
+                                <td>{{ hasil_inferensi }}</td>
+                            </tr>
+                            <tr>
+                                <td>Solusi</td>
+                                <td>:</td>
+                                <td style="text-align: justify; line-height: 1.5;">
+                                    Saya sangat prihatin mendengar bahwa ada seseorang yang mengalami indikasi penghinaan dan penurunan harga diri. Situasi semacam ini dapat memiliki dampak yang sangat negatif pada kesejahteraan korban. Berikut ini adalah beberapa langkah yang dapat diambil untuk membantu korban dalam situasi ini:<br/>
+                                    <ol>
+                                        <li><b>Dukungan emosional:</b> Tunjukkan dukungan emosional kepada korban dan beri tahu mereka bahwa Anda peduli dengan situasinya. Dengarkan mereka dengan penuh perhatian, tanpa menyalahkan atau meragukan pengalaman mereka. Validasi perasaan mereka dan berikan dorongan untuk membangun kembali harga diri mereka.</li>
+                                        <li><b>Dorong pencarian bantuan profesional:</b> Sarankan kepada korban untuk mencari bantuan dari profesional seperti konselor, psikolog, atau terapis yang berpengalaman dalam bidang kekerasan verbal atau penurunan harga diri. Para profesional ini dapat membantu korban memahami dampak emosional yang mungkin mereka alami dan memberikan strategi untuk mengatasi penghinaan dan penurunan harga diri.</li>
+                                        <li><b>Sediakan sumber daya:</b> Informasikan korban tentang sumber daya dan layanan yang tersedia bagi mereka. Banyak negara memiliki organisasi yang fokus pada bantuan dan perlindungan bagi korban kekerasan verbal atau penurunan harga diri. Sediakan nomor hotline darurat dan alamat tempat perlindungan jika diperlukan.</li>
+                                        <li><b>Tingkatkan kesadaran diri dan harga diri:</b> Bantu korban untuk meningkatkan kesadaran diri mereka dan membangun harga diri yang kuat. Dorong mereka untuk mengidentifikasi dan menghargai nilai-nilai dan kelebihan mereka. Bantu mereka menumbuhkan rasa percaya diri dan memperkuat batasan pribadi yang sehat.</li>
+                                        <li><b>Dukungan jaringan sosial:</b> Bantu korban untuk membangun jaringan sosial yang positif dan mendukung. Dorong mereka untuk mencari dukungan dari keluarga, teman, atau anggota masyarakat yang dapat memberikan dukungan positif dan memperkuat harga diri mereka.</li>
+                                        <li><b>Pendidikan dan kesadaran:</b> Tingkatkan kesadaran tentang kekerasan verbal dan penurunan harga diri. Edukasi orang lain tentang pentingnya menghormati dan mendukung orang lain. Kampanye kesadaran dapat membantu mengubah pandangan masyarakat dan mendorong lingkungan yang lebih inklusif dan positif.</li>
+                                    </ol>
+                                    Saya mendorong Anda untuk mendampingi korban dalam mencari bantuan dari organisasi atau individu yang berpengalaman dalam menangani kasus penghinaan atau penurunan harga diri.
+                                </td>
+                            </tr>
+                        </table>
+                        {%elif hasil_inferensi == "Ada indikasi adanya isolasi dari teman dan keluarga"%}
+                        <table>
+                            <tr>
+                                <td style="white-space: nowrap;">Hasil Inferensi</td>
+                                <td>:</td>
+                                <td>{{ hasil_inferensi }}</td>
+                            </tr>
+                            <tr>
+                                <td>Solusi</td>
+                                <td>:</td>
+                                <td style="text-align: justify; line-height: 1.5;">
+                                    Saya sangat prihatin mendengar bahwa ada seseorang yang mengalami indikasi isolasi dari teman dan keluarga. Isolasi sosial seperti ini dapat memberikan dampak yang serius pada kesejahteraan korban. Berikut ini adalah beberapa langkah yang dapat diambil untuk membantu korban dalam situasi ini:<br/>
+                                    <ol>
+                                        <li><b>Dorong korban untuk mencari dukungan profesional:</b> Sarankan kepada korban untuk mencari bantuan dari profesional seperti konselor, psikolog, atau terapis yang berpengalaman dalam bidang isolasi sosial. Profesional ini dapat membantu korban memahami dan mengatasi perasaan mereka, serta memberikan strategi untuk menghadapi isolasi dan membangun kembali jaringan sosial yang sehat.</li>
+                                        <li><b>Sediakan dukungan emosional:</b> Tunjukkan dukungan emosional kepada korban dan beri tahu mereka bahwa Anda peduli dengan situasinya. Dengarkan mereka dengan penuh perhatian dan beri ruang bagi mereka untuk berbagi perasaan mereka. Validasi perasaan mereka dan berikan dorongan untuk mencari bantuan serta mengatasi isolasi.</li>
+                                        <li><b>Mendorong kontak dengan keluarga dan teman:</b> Bantu korban dalam menghubungi keluarga dan teman-teman yang dapat memberikan dukungan dan bantuan. Dorong mereka untuk menghadiri acara sosial, bergabung dengan kelompok atau komunitas yang relevan dengan minat mereka, atau menjalin kontak melalui telepon atau media sosial. Bantu mereka memulihkan hubungan yang mungkin terabaikan atau terputus akibat isolasi.</li>
+                                        <li><b>Jadi pendengar yang empatik:</b> Jadilah pendengar yang empatik bagi korban. Luangkan waktu untuk mendengarkan mereka tanpa menghakimi atau menyalahkan. Berikan dukungan dan persahabatan yang tulus.</li>
+                                        <li><b>Sediakan informasi tentang sumber daya dan kegiatan sosial:</b> Berikan informasi kepada korban tentang sumber daya dan kegiatan sosial di komunitas mereka. Bantu mereka menemukan kelompok, klub, atau organisasi yang sesuai dengan minat mereka. Ini dapat membantu mereka membangun kembali jaringan sosial dan merasa terhubung dengan orang lain.</li>
+                                        <li><b>Tingkatkan kesadaran tentang isolasi sosial:</b> Tingkatkan kesadaran di masyarakat tentang isolasi sosial dan dampaknya. Edukasi orang lain tentang pentingnya dukungan sosial dan kebutuhan akan koneksi sosial yang sehat. Ajak orang-orang di sekitar korban untuk menjadi lebih peka terhadap isu ini dan membantu mereka yang mengalami isolasi.</li>
+                                    </ol>
+                                    Saya mendorong Anda untuk mendampingi korban dalam mencari bantuan dari organisasi atau individu yang berpengalaman dalam menangani isolasi sosial.
+                                </td>
+                            </tr>
+                        </table>
+                        {%elif hasil_inferensi == "Ada indikasi adanya keterbatasan sumber daya ekonomi"%}
+                        <table>
+                            <tr>
+                                <td style="white-space: nowrap;">Hasil Inferensi</td>
+                                <td>:</td>
+                                <td>{{ hasil_inferensi }}</td>
+                            </tr>
+                            <tr>
+                                <td>Solusi</td>
+                                <td>:</td>
+                                <td style="text-align: justify; line-height: 1.5;">
+                                    Saya memahami bahwa keterbatasan sumber daya ekonomi dapat memberikan dampak yang signifikan pada korban. Berikut ini adalah beberapa solusi yang dapat membantu korban dalam situasi ini:<br/>
+                                    <ol>
+                                        <li><b>Mencari bantuan dari organisasi non-pemerintah dan lembaga amal:</b> Sarankan korban untuk mencari bantuan dari organisasi non-pemerintah atau lembaga amal yang fokus pada membantu individu dengan keterbatasan sumber daya ekonomi. Banyak organisasi ini menyediakan bantuan dalam bentuk makanan, pakaian, tempat tinggal, dan dukungan keuangan.</li>
+                                        <li><b>Mencari bantuan keuangan:</b> Bantu korban dalam mencari bantuan keuangan yang tersedia. Mereka dapat menghubungi lembaga amal, yayasan, atau program pemerintah yang memberikan bantuan finansial kepada individu dalam keadaan sulit. Bantu mereka untuk menemukan sumber daya yang relevan dengan kebutuhan mereka.</li>
+                                        <li><b>Bantuan dalam mencari pekerjaan atau pelatihan keterampilan:</b> Bantu korban dalam mencari peluang pekerjaan atau pelatihan keterampilan yang dapat membantu mereka memperoleh penghasilan yang lebih baik. Bantu mereka dalam menyusun atau meningkatkan resume mereka, mempersiapkan diri untuk wawancara kerja, dan menjelajahi peluang pendidikan atau pelatihan yang tersedia.</li>
+                                        <li><b>Membangun jaringan sosial dan dukungan:</b> Dorong korban untuk membangun jaringan sosial yang kuat dan mendukung. Mereka dapat mencari komunitas lokal, kelompok dukungan, atau organisasi sosial yang dapat membantu mereka dengan sumber daya ekonomi dan memberikan dukungan emosional.</li>
+                                        <li><b>Mencari bantuan dari lembaga pemerintah:</b> Bantu korban dalam menjelajahi program bantuan sosial dan layanan yang disediakan oleh lembaga pemerintah. Banyak negara memiliki program bantuan sosial yang dapat membantu individu dengan keterbatasan ekonomi. Dorong korban untuk menghubungi departemen sosial atau kantor layanan sosial setempat untuk memperoleh informasi lebih lanjut.</li>
+                                        <li><b>Tingkatkan literasi keuangan:</b> Bantu korban untuk meningkatkan literasi keuangan mereka. Edukasi mereka tentang pengelolaan keuangan, penghematan, dan membuat anggaran yang efektif. Ini dapat membantu mereka memaksimalkan sumber daya yang tersedia dan meningkatkan stabilitas keuangan mereka.</li>
+                                    </ol>
+                                    Ingatlah bahwa situasi setiap individu unik, dan solusi ini hanya memberikan panduan umum. Saya mendorong Anda untuk mendampingi korban dalam mencari bantuan dari organisasi atau lembaga yang berkompeten dalam membantu individu dengan keterbatasan sumber daya ekonomi.
+                                </td>
+                            </tr>
+                        </table>
+                        {%else%}
+                        <table>
+                            <tr>
+                                <td style="white-space: nowrap;">Hasil Inferensi</td>
+                                <td>:</td>
+                                <td>{{ hasil_inferensi }}</td>
+                            </tr>
+                            <tr>
+                                <td>Solusi</td>
+                                <td>:</td>
+                                <td style="text-align: justify; line-height: 1.5;">
+                                </td>
+                            </tr>
+                        </table>
+                        {%endif%}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     
+</body>
+</html>

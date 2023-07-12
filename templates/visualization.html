@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- file css -->
+    <link rel="stylesheet" href="/static/css/style.css">
+    
+    <title>Visualization</title>
+</head>
+<body>
+    <div class="ctrl-navigasi">
+        <nav>
+          <h2 class="logo"><a href="/views/"><b>Expert<br/><span> System</span></b></a></h2>
+          <ul class="navigasi">
+            <li class="home"><a href="/views/">Home</a></li>
+            <li><a href="/views/about">About</a></li>
+            <li><a href="/views/visual" style="font-weight: bold;">Article</a></li>
+            <li><a href="/views/identify">Identify Solutions</a></li>
+            <li><a href="/views/logout" class="logout">Logout</a></li>
+          </ul>
+        </nav>
+        <div class="ctrl-pictvisual">
+            <div class="pictvisual1">
+              <div style="padding-right: 72px;">
+                <h4 style="padding-bottom: 8px;">Jumlah Kasus Kekerasan Terhadap Perempuan (2016-2022)</h4>
+                <p style="text-align: justify;">
+                  Kementerian Pemberdayaan Perempuan dan Perlindungan Anak (PPPA) mencatat, sebanyak 25.050 perempuan menjadi korban kekerasan di Indonesia sepanjang 2022. Jumlah tersebut meningkat 15,2% dari tahun sebelumnya sebanyak 21.753 kasus.
+                  Menurut usianya, 30,3% perempuan yang menjadi korban kekerasan berusia 25-44 tahun. Ada pula 30% perempuan yang menjadi korban kekerasan berusia 13-17 tahun.
+                  Dilihat dari tempat kejadian, 58,1% kekerasan terhadap perempuan terjadi di lingkup rumah tangga. Kemudian, 24,9% kekerasan terhadap perempuan terjadi di tempat lainnya.
+                  Sementara dari provinsinya, jumlah perempuan korban kekerasan paling banyak di Jawa Timur, yakni 2.136 orang. Posisi setelahnya ditempati oleh Jawa Tengah dan Jawa Barat dengan perempuan yang menjadi korban kekerasan berturut-turut sebanyak 2.111 orang dan 1.819 orang.
+                </p>
+              </div>
+              <div >
+                <div id="chart1"></div>
+              </div>
+            </div>
+            <div class="pictvisual2">
+              <div style="padding-right: 72px;">
+                <h4 style="padding-bottom: 8px;">Jenis Kekerasan Terhadap Perempuan (2016-2022)</h4>
+                <p style="text-align: justify;">Dalam 7 tahun terakhir, terdapat lima jenis kekerasan yang mencatat jumlah kasus yang paling tinggi. Jenis kekerasan pertama adalah Kekerasan Dalam Rumah Tangga (KDRT), diikuti oleh Kekerasan Seksual, Kekerasan Fisik, Kekerasan Psikologis, dan Kekerasan Ekonomi. Data tersebut menunjukkan bahwa jenis kekerasan tersebut sering terjadi dan perlu menjadi fokus dalam upaya pencegahan dan penanganan kekerasan terhadap perempuan. Dengan menyoroti kelima jenis kekerasan ini, diharapkan dapat meningkatkan kesadaran dan tindakan dalam melawan kekerasan terhadap perempuan.</p>
+              </div>
+              <div>
+                <div id="chart2"></div>
+              </div>
+            </div>
+            <div class="pictvisual3">
+              <div style="padding-right: 72px;">
+                <h4 style="padding-bottom: 8px; padding-top: 32px;">Kasus Kekerasan Terhadap Perempuan (Januari - Juni 2023)</h4>
+                <p style="text-align: justify;">Informasi ini diambil dari situs resmi SIMFONI-PPA milik Kementerian Pemberdayaan Perempuan dan Perlindungan Anak, yang merupakan sistem pelaporan dan pemantauan kekerasan terhadap perempuan yang menjadi sumber data yang akurat dan terpercaya. Data yang disajikan merupakan data yang diinput secara real-time mulai dari tanggal 1 Januari 2023 hingga saat ini. Hingga saat ini, terdapat 11.372 korban kekerasan terhadap perempuan. Jenis kekerasan yang tercatat meliputi kekerasan fisik sebanyak 3.323 kasus, kekerasan psikis sebanyak 3.344 kasus, kekerasan seksual sebanyak 5.180 kasus, eksploitasi sebanyak 125 kasus, trafficking sebanyak 152 kasus, penelantaran sebanyak 942 kasus, dan kasus kekerasan lainnya sebanyak 1.083 kasus.</p>
+              </div>
+              <div style="width: 55%;">
+                <img src="../static/pict/visual2023.png" alt="diagram jenis kekerasan" style="height: 55vh;">
+              </div>
+            </div>
+            <div class="pictvisual4">
+              <h4 style="padding-bottom: 8px;">Kesimpulan</h4>
+              <p style="text-align: justify;">
+                Kesimpulan yang dapat diambil adalah bahwa kekerasan terhadap perempuan di Indonesia mengalami peningkatan dari tahun ke tahun. Jenis kekerasan yang paling umum meliputi Kekerasan Dalam Rumah Tangga (KDRT), Kekerasan Seksual, Kekerasan Fisik, Kekerasan Psikologis, dan Kekerasan Ekonomi. Kebanyakan kasus kekerasan terjadi di lingkup rumah tangga, dan Jawa Timur merupakan provinsi dengan jumlah korban terbanyak. Data terbaru menunjukkan adanya lebih dari 11.000 kasus kekerasan terhadap perempuan dalam periode Januari-Juni 2023, mencakup berbagai jenis kekerasan seperti fisik, psikis, seksual, eksploitasi, trafficking, penelantaran, dan lainnya.
+              </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- plotly CDN -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script>
+      var graph1 = {{ graph1JSON | safe }};
+      Plotly.plot("chart1", graph1, {})
+
+      var graph2 = {{ graph2JSON | safe }};
+      Plotly.plot("chart2", graph2, {})
+    </script>
+</body>
+</html>

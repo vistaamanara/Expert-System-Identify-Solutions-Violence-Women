@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- file css -->
+    <link rel="stylesheet" href="/static/css/style.css">
+    
+    <title>Identify Solutions</title>
+</head>
+<body>
+    <div class="ctrl-navigasi">
+        <nav>
+          <h2 class="logo"><a href="/views/"><b>Expert<br/><span> System</span></b></a></h2>
+          <ul class="navigasi">
+            <li class="home"><a href="/views/">Home</a></li>
+            <li><a href="/views/about">About</a></li>
+            <li><a href="/views/visual">Article</a></li>
+            <li><a href="/views/identify" style="font-weight: bold;">Identify Solutions</a></li>
+            <li><a href="/views/logout" class="logout">Logout</a></li>
+          </ul>
+        </nav>
+        <div class="ctrl-pictidentify">
+          <div class="pictidentify">
+            <div>
+              <div class="container-kiri">
+                <h1 style="font-size: 36px;color: white; padding-top: 20%; padding-left: 10%; padding-right: 10%;">Identifikasi & Pemberian Solusi<br/>Kasus Kekerasan Terhadap <span style="color: #0d6efd;">Perempuan</span></h1>
+                <p style="font-size: 16px; color: white; padding-top: 5%; padding-left: 10%; padding-right: 10%;">
+                  Kekuatan dalam dirimu menginspirasi perubahan. Bersama, kita lawan kekerasan, membangun kehidupan yang lebih baik.
+                </p>
+              </div>
+            </div>
+            <div class="container-kanan">
+              <h4 style="font-weight: bold;">Hey, Halo! <i class="fa-regular fa-face-smile-wink" style="color: #0d6efd;"></i></h4>
+              <p style="font-size: 14px; padding-bottom: 24px;">Isi form data diri kamu dan temukan solusi yang tepat!</p>
+              <form action="/views/save-data", method="POST">
+                <div class="namalengkap">
+                  <input type="text" class="form-control" id="exampleFormControlInput1" name="namakorban" placeholder="Nama Lengkap" required>
+                </div>
+                <div style="padding-top: 16px;">
+                  <select class="form-select" aria-label="Default select example" name="usiakorban" required>
+                    <option value="">Pilih Usia</option>
+                    <option value="Kurang dari 18 tahun">Kurang dari 18 tahun</option>
+                    <option value="18-24 tahun">18-24 tahun</option>
+                    <option value="25-34 tahun">25-34 tahun</option>
+                    <option value="35-44 tahun">35-44 tahun</option>
+                    <option value="45-54 tahun">45-54 tahun</option>
+                    <option value="55 tahun ke atas">55 tahun ke atas</option>
+                  </select>
+                </div>
+                <div style="padding-top: 16px;">
+                  <select class="form-select" aria-label="Default select example" name="pendidikankorban" required>
+                    <option value="">Pilih Tingkat Pendidikan</option>
+                    <option value="Tidak tamat SD">Tidak tamat SD</option>
+                    <option value="SD/Sederajat">SD/Sederajat</option>
+                    <option value="SMP/Sederajat">SMP/Sederajat</option>
+                    <option value="SMA/SMK/Sederajat">SMA/SMK/Sederajat</option>
+                    <option value="Diploma (D1-D3)">Diploma (D1-D3)</option>
+                    <option value="Sarjana (S1)">Sarjana (S1)</option>
+                    <option value="Magister (S2)">Magister (S2)</option>
+                    <option value="Doktor (S3)">Doktor (S3)</option>
+                  </select>
+                </div>
+                <div style="padding-top: 16px;">
+                  <select class="form-select" aria-label="Default select example" name="asalkorban" required>
+                    <option value="">Pilih Provinsi</option>
+                    <option value="Aceh">Aceh</option>
+                    <option value="Bali">Bali</option>
+                    <option value="Banten">Banten</option>
+                    <option value="Bengkulu">Bengkulu</option>
+                    <option value="Gorontalo">Gorontalo</option>
+                    <option value="Jakarta">Jakarta</option>
+                    <option value="Jambi">Jambi</option>
+                    <option value="Jawa Barat">Jawa Barat</option>
+                    <option value="Jawa Tengah">Jawa Tengah</option>
+                    <option value="Jawa Timur">Jawa Timur</option>
+                    <option value="Kalimantan Barat">Kalimantan Barat</option>
+                    <option value="Kalimantan Selatan">Kalimantan Selatan</option>
+                    <option value="Kalimantan Tengah">Kalimantan Tengah</option>
+                    <option value="Kalimantan Timur">Kalimantan Timur</option>
+                    <option value="Kalimantan Utara">Kalimantan Utara</option>
+                    <option value="Kepulauan Bangka Belitung">Kepulauan Bangka Belitung</option>
+                    <option value="Kepulauan Riau">Kepulauan Riau</option>
+                    <option value="Lampung">Lampung</option>
+                    <option value="Maluku">Maluku</option>
+                    <option value="Maluku Utara">Maluku Utara</option>
+                    <option value="Nusa Tenggara Barat">Nusa Tenggara Barat</option>
+                    <option value="Nusa Tenggara Timur">Nusa Tenggara Timur</option>
+                    <option value="Papua">Papua</option>
+                    <option value="24">Papua Barat</option>
+                    <option value="Papua Barat">Papua Barat Daya</option>
+                    <option value="Papua Pegunungan">Papua Pegunungan</option>
+                    <option value="Papua Selatan">Papua Selatan</option>
+                    <option value="Papua Tengah">Papua Tengah</option>
+                    <option value="Riau">Riau</option>
+                    <option value="Sulawesi Barat">Sulawesi Barat</option>
+                    <option value="Sulawesi Selatan">Sulawesi Selatan</option>
+                    <option value="Sulawesi Tengah">Sulawesi Tengah</option>
+                    <option value="Sulawesi Tenggara">Sulawesi Tenggara</option>
+                    <option value="Sulawesi Utara">Sulawesi Utara</option>
+                    <option value="Sumatera Barat">Sumatera Barat</option>
+                    <option value="Sumatera Selatan">Sumatera Selatan</option>
+                    <option value="Sumatera Utara">Sumatera Utara</option>
+                    <option value="Yogyakarta">Yogyakarta</option>
+                  </select>
+                </div>
+                <button type="submit" class="btn btn-primary" style="margin-top: 48px;">Mulai Identifikasi Solusi Kekerasan</button>
+              </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
