@@ -1,0 +1,41 @@
+[
+    {
+        "hubungan_pelaku":[0, 1, 2]
+    },
+    {
+        "tempat_kekerasan":[0, 1, 2, 3]
+    },
+    {
+        "kekerasan_fisik":[0, 1]
+    },
+    {
+        "ancaman_intimidasi":[0, 1]
+    },
+    {
+        "penolakan_emosional":[0, 1]
+    },
+    {
+        "tekanan_seksual":[0, 1]
+    },
+    {
+        "pelecehan_seksual":[0, 1]
+    },
+    {
+        "perlakuan_kasar":[0, 1]
+    },
+    {
+        "cedera_fisik":[0, 1]
+    },
+    {
+        "penghinaan":[0, 1]
+    },
+    {
+        "isolasi":[0, 1]
+    },
+    {
+        "penyalahgunaan_ekonomi":[0, 1]
+    },
+    {
+        "keterbatasan_sumber_daya":[0, 1]
+    }
+]

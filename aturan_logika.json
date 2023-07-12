@@ -1,0 +1,75 @@
+[
+    {
+        "kondisi":{
+            "hubungan_pelaku": 0,
+            "tempat_kekerasan": 0
+        },
+        "indikasi":"Kemungkinan kekerasan di dalam rumah"
+    },
+    {
+        "kondisi":{
+            "kekerasan_fisik": 1
+        },
+        "indikasi":"Ada indikasi adanya kekerasan fisik"
+    },
+    {
+        "kondisi":{
+            "ancaman_intimidasi": 1
+        },
+        "indikasi":"Ada indikasi adanya ancaman dan intimidasi"
+    },
+    {
+        "kondisi":{
+            "penolakan_emosional": 1
+        },
+        "indikasi":"Ada indikasi adanya penolakan atau penyalahgunaan emosional"
+    },
+    {
+        "kondisi":{
+            "tekanan_seksual": 1
+        },
+        "indikasi":"Ada indikasi adanya tekanan seksual"
+    },
+    {
+        "kondisi":{
+            "pelecehan_seksual": 1
+        },
+        "indikasi":"Ada indikasi adanya pelecehan seksual"
+    },
+    {
+        "kondisi":{
+            "perlakuan_kasar": 1
+        },
+        "indikasi":"Ada indikasi adanya perlakuan kasar"
+    },
+    {
+        "kondisi":{
+            "cedera_fisik": 1
+        },
+        "indikasi":"Ada indikasi adanya cedera fisik"
+    },
+    {
+        "kondisi":{
+            "penghinaan": 1
+        },
+        "indikasi":"Ada indikasi adanya penghinaan dan penurunan harga diri"
+    },
+    {
+        "kondisi":{
+            "isolasi": 1
+        },
+        "indikasi":"Ada indikasi adanya isolasi dari teman dan keluarga"
+    },
+    {
+        "kondisi":{
+            "penyalahgunaan_ekonomi": 1
+        },
+        "indikasi":"Ada indikasi adanya penyalahgunaan ekonomi"
+    },
+    {
+        "kondisi":{
+            "keterbatasan_sumber_daya": 1
+        },
+        "indikasi":"Ada indikasi adanya keterbatasan sumber daya ekonomi"
+    }
+]
