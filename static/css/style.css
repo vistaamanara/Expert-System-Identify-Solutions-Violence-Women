@@ -1,0 +1,348 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.ctrl-navigasi{
+    background-size: cover;
+    background-position: center;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 32px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.logo a{
+    text-decoration: none;
+    color: black;
+    font-size: 28px;
+}
+.logo a span{
+    color: #0d6efd;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+nav ul li a:hover{
+    color: #0d6efd;
+}
+.picthome{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 32px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.violence{
+    height: 55vh;
+    width: 55%;
+}
+.pictabout{
+    padding-top: 32px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.algometo{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;   
+}
+.forchaining{
+    height: 40vh;
+    width: 55%;
+}
+.pictvisual1{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 32px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.pictvisual2{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 32px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.pictvisual3{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 32px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.pictvisual4{
+    padding-top: 32px;
+    padding-left: 10%; 
+    padding-right: 10%;
+}
+.pictidentify{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 32px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.container-kiri{
+    background-color: #a7c1e2;
+    background-size: cover;
+    height: 75vh;
+    width: 90%;
+    border-radius: 8px;
+}
+.container-kanan{
+    height: 75vh;
+    width: 90%;
+}
+.picttanya{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.container-kanan-tanya{
+    margin: 5px auto 0;
+    height: 75vh;
+    width: 100%;
+}
+.picthasil{
+    padding-top: 32px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.container-kanan-hasil{
+    height: 80vh;
+}
+table{
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+td{
+    padding: 10px;
+    vertical-align: top;
+    text-align: left;
+}
+.logout{
+    padding: 10px;
+    border: 2px solid #0d6efd;
+    font-weight: bold;
+    color: #0d6efd;
+}
+.logout:hover{
+    background-color: #0d6efd;
+    color: white;
+    border: 1px solid white;
+}
+#login{
+    background-color: #0d6efd;
+    border: 2px solid white;
+    color: white;
+}
+.pictlogin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.form-login{
+    padding-top: 32px;
+}
+.pictsignup{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.form-signup{
+    padding-top: 32px;
+}
+.admin-set{
+    display: flex;
+}
+.sidebar {
+    height: 100vh;
+    width: 200px;
+    border-right: 1px solid black;
+    padding: 20px;
+}
+.sidebar a{
+    text-decoration: none;
+    color: black;
+}
+.content {
+    flex: 1;
+    padding: 20px;
+}
+.nav-admin {
+    display: block;
+    margin-bottom: 20px;
+}
+.nav-admin:hover{
+    color: #0d6efd;
+}
+.content2{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 32px;
+}
+.satu{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #0d6efd;
+    color: white;
+    border-radius: 8px;
+    padding: 16px;
+}
+.dua{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #0d6efd;
+    color: white;
+    border-radius: 8px;
+    padding: 16px;
+}
+.tiga{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #0d6efd;
+    color: white;
+    border-radius: 8px;
+    padding: 16px;
+}
+.empat{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #0d6efd;
+    color: white;
+    border-radius: 8px;
+    padding: 16px;
+}
+
+
+/* Responsive breakpoint */
+
+/* ukuran tablet */
+@media screen and (max-width:768px) {
+    nav{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    nav ul{
+        justify-content: flex-end;
+    }
+    nav ul li{
+        padding: 10px;
+    }
+    .picthome{
+        display: inline-block;
+    }
+    .picthome{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .violence{
+        height: 50%;
+        width: 100%;
+        text-align: center;
+    }
+    .picthome div{
+        padding-top: 32px;
+    }
+    .pictabout{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .algometo{
+        display: inline-block;
+    }
+    .forchaining{
+        height: 40vh;
+        width: 100%;        
+    }
+    .implemen{
+        padding-top: 32px;
+    }
+    .pictvisual1{
+        display: inline-block;
+        padding-left: 5%;
+        padding-right: 0;
+    }
+    .pictvisual2{
+        display: inline-block;
+        padding-left: 5%;
+        padding-right: 0;
+    }
+    .pictvisual3{
+        display: inline-block;
+        padding-left: 5%;
+        padding-right: 0;
+    }
+    .pictvisual4{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+/* ukuran mobile */
+@media screen and (max-width: 576px){
+    nav{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    nav ul{
+        display: none;
+    }
+    .picthome{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .pictabout{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .forchaining{
+        height: 40vh;
+        width: 100%;
+    }
+    .ctrl-pictvisual{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .pictvisual1{
+        display: inline-block;
+    }
+    .pictvisual2{
+        display: inline-block;
+    }
+    .pictvisual3{
+        display: inline-block;
+    }
+    .container-kiri{
+        display: none;
+    }
+    .parag{
+        display: none;
+    }
+}
